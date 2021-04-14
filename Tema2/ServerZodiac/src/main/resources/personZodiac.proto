@@ -12,9 +12,5 @@ message PersonZodiac{
 }
 
 message PersonZodiacResponse{
-  PersonZodiac person = 1;
-}
-
-message Empty {
-  /* EMPTY */
+ string zodiac=1;
 }

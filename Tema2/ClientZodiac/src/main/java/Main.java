@@ -71,7 +71,7 @@ public class Main {
                                 new StreamObserver<PersonZodiacOuterClass.PersonZodiacResponse>() {
                                     @Override
                                     public void onNext(PersonZodiacOuterClass.PersonZodiacResponse personZodiacResponse) {
-
+                                        System.out.println(personZodiacResponse);
                                     }
 
                                     @Override
@@ -94,9 +94,13 @@ public class Main {
                     break;
                 }
 
-                default:
+                default: {
                     System.out.println("Unknown command, insert a valid command!");
+                }
+
+
             }
+
         }
     }
 }
