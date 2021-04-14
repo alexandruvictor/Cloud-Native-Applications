@@ -27,16 +27,6 @@ public final class PersonZodiacOuterClass {
      */
     com.google.protobuf.ByteString
         getDateBytes();
-
-    /**
-     * <code>string zodiac = 2;</code>
-     */
-    java.lang.String getZodiac();
-    /**
-     * <code>string zodiac = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getZodiacBytes();
   }
   /**
    * Protobuf type {@code PersonZodiac}
@@ -52,7 +42,6 @@ public final class PersonZodiacOuterClass {
     }
     private PersonZodiac() {
       date_ = "";
-      zodiac_ = "";
     }
 
     @java.lang.Override
@@ -83,12 +72,6 @@ public final class PersonZodiacOuterClass {
               java.lang.String s = input.readStringRequireUtf8();
 
               date_ = s;
-              break;
-            }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              zodiac_ = s;
               break;
             }
             default: {
@@ -157,40 +140,6 @@ public final class PersonZodiacOuterClass {
       }
     }
 
-    public static final int ZODIAC_FIELD_NUMBER = 2;
-    private volatile java.lang.Object zodiac_;
-    /**
-     * <code>string zodiac = 2;</code>
-     */
-    public java.lang.String getZodiac() {
-      java.lang.Object ref = zodiac_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        zodiac_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string zodiac = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getZodiacBytes() {
-      java.lang.Object ref = zodiac_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        zodiac_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -208,9 +157,6 @@ public final class PersonZodiacOuterClass {
       if (!getDateBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, date_);
       }
-      if (!getZodiacBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, zodiac_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -222,9 +168,6 @@ public final class PersonZodiacOuterClass {
       size = 0;
       if (!getDateBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, date_);
-      }
-      if (!getZodiacBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, zodiac_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -244,8 +187,6 @@ public final class PersonZodiacOuterClass {
       boolean result = true;
       result = result && getDate()
           .equals(other.getDate());
-      result = result && getZodiac()
-          .equals(other.getZodiac());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -259,8 +200,6 @@ public final class PersonZodiacOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + DATE_FIELD_NUMBER;
       hash = (53 * hash) + getDate().hashCode();
-      hash = (37 * hash) + ZODIAC_FIELD_NUMBER;
-      hash = (53 * hash) + getZodiac().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -396,8 +335,6 @@ public final class PersonZodiacOuterClass {
         super.clear();
         date_ = "";
 
-        zodiac_ = "";
-
         return this;
       }
 
@@ -425,7 +362,6 @@ public final class PersonZodiacOuterClass {
       public proto.PersonZodiacOuterClass.PersonZodiac buildPartial() {
         proto.PersonZodiacOuterClass.PersonZodiac result = new proto.PersonZodiacOuterClass.PersonZodiac(this);
         result.date_ = date_;
-        result.zodiac_ = zodiac_;
         onBuilt();
         return result;
       }
@@ -476,10 +412,6 @@ public final class PersonZodiacOuterClass {
         if (other == proto.PersonZodiacOuterClass.PersonZodiac.getDefaultInstance()) return this;
         if (!other.getDate().isEmpty()) {
           date_ = other.date_;
-          onChanged();
-        }
-        if (!other.getZodiac().isEmpty()) {
-          zodiac_ = other.zodiac_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -579,75 +511,6 @@ public final class PersonZodiacOuterClass {
         onChanged();
         return this;
       }
-
-      private java.lang.Object zodiac_ = "";
-      /**
-       * <code>string zodiac = 2;</code>
-       */
-      public java.lang.String getZodiac() {
-        java.lang.Object ref = zodiac_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          zodiac_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string zodiac = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getZodiacBytes() {
-        java.lang.Object ref = zodiac_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          zodiac_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string zodiac = 2;</code>
-       */
-      public Builder setZodiac(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        zodiac_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string zodiac = 2;</code>
-       */
-      public Builder clearZodiac() {
-        
-        zodiac_ = getDefaultInstance().getZodiac();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string zodiac = 2;</code>
-       */
-      public Builder setZodiacBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        zodiac_ = value;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -714,6 +577,16 @@ public final class PersonZodiacOuterClass {
      */
     com.google.protobuf.ByteString
         getZodiacBytes();
+
+    /**
+     * <code>string data = 2;</code>
+     */
+    java.lang.String getData();
+    /**
+     * <code>string data = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getDataBytes();
   }
   /**
    * Protobuf type {@code PersonZodiacResponse}
@@ -729,6 +602,7 @@ public final class PersonZodiacOuterClass {
     }
     private PersonZodiacResponse() {
       zodiac_ = "";
+      data_ = "";
     }
 
     @java.lang.Override
@@ -759,6 +633,12 @@ public final class PersonZodiacOuterClass {
               java.lang.String s = input.readStringRequireUtf8();
 
               zodiac_ = s;
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              data_ = s;
               break;
             }
             default: {
@@ -827,6 +707,40 @@ public final class PersonZodiacOuterClass {
       }
     }
 
+    public static final int DATA_FIELD_NUMBER = 2;
+    private volatile java.lang.Object data_;
+    /**
+     * <code>string data = 2;</code>
+     */
+    public java.lang.String getData() {
+      java.lang.Object ref = data_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        data_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string data = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDataBytes() {
+      java.lang.Object ref = data_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        data_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -844,6 +758,9 @@ public final class PersonZodiacOuterClass {
       if (!getZodiacBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, zodiac_);
       }
+      if (!getDataBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, data_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -855,6 +772,9 @@ public final class PersonZodiacOuterClass {
       size = 0;
       if (!getZodiacBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, zodiac_);
+      }
+      if (!getDataBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, data_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -874,6 +794,8 @@ public final class PersonZodiacOuterClass {
       boolean result = true;
       result = result && getZodiac()
           .equals(other.getZodiac());
+      result = result && getData()
+          .equals(other.getData());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -887,6 +809,8 @@ public final class PersonZodiacOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ZODIAC_FIELD_NUMBER;
       hash = (53 * hash) + getZodiac().hashCode();
+      hash = (37 * hash) + DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getData().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1022,6 +946,8 @@ public final class PersonZodiacOuterClass {
         super.clear();
         zodiac_ = "";
 
+        data_ = "";
+
         return this;
       }
 
@@ -1049,6 +975,7 @@ public final class PersonZodiacOuterClass {
       public proto.PersonZodiacOuterClass.PersonZodiacResponse buildPartial() {
         proto.PersonZodiacOuterClass.PersonZodiacResponse result = new proto.PersonZodiacOuterClass.PersonZodiacResponse(this);
         result.zodiac_ = zodiac_;
+        result.data_ = data_;
         onBuilt();
         return result;
       }
@@ -1099,6 +1026,10 @@ public final class PersonZodiacOuterClass {
         if (other == proto.PersonZodiacOuterClass.PersonZodiacResponse.getDefaultInstance()) return this;
         if (!other.getZodiac().isEmpty()) {
           zodiac_ = other.zodiac_;
+          onChanged();
+        }
+        if (!other.getData().isEmpty()) {
+          data_ = other.data_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -1198,6 +1129,75 @@ public final class PersonZodiacOuterClass {
         onChanged();
         return this;
       }
+
+      private java.lang.Object data_ = "";
+      /**
+       * <code>string data = 2;</code>
+       */
+      public java.lang.String getData() {
+        java.lang.Object ref = data_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          data_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string data = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDataBytes() {
+        java.lang.Object ref = data_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          data_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string data = 2;</code>
+       */
+      public Builder setData(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        data_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string data = 2;</code>
+       */
+      public Builder clearData() {
+        
+        data_ = getDefaultInstance().getData();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string data = 2;</code>
+       */
+      public Builder setDataBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        data_ = value;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1270,12 +1270,12 @@ public final class PersonZodiacOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022personZodiac.proto\",\n\014PersonZodiac\022\014\n\004" +
-      "date\030\001 \001(\t\022\016\n\006zodiac\030\002 \001(\t\"&\n\024PersonZodi" +
-      "acResponse\022\016\n\006zodiac\030\001 \001(\t2N\n\023PersonServ" +
-      "iceZodiac\0227\n\017getPersonZodiac\022\r.PersonZod" +
-      "iac\032\025.PersonZodiacResponseB\007\n\005protob\006pro" +
-      "to3"
+      "\n\022personZodiac.proto\"\034\n\014PersonZodiac\022\014\n\004" +
+      "date\030\001 \001(\t\"4\n\024PersonZodiacResponse\022\016\n\006zo" +
+      "diac\030\001 \001(\t\022\014\n\004data\030\002 \001(\t2N\n\023PersonServic" +
+      "eZodiac\0227\n\017getPersonZodiac\022\r.PersonZodia" +
+      "c\032\025.PersonZodiacResponseB\007\n\005protob\006proto" +
+      "3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1294,13 +1294,13 @@ public final class PersonZodiacOuterClass {
     internal_static_PersonZodiac_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PersonZodiac_descriptor,
-        new java.lang.String[] { "Date", "Zodiac", });
+        new java.lang.String[] { "Date", });
     internal_static_PersonZodiacResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_PersonZodiacResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PersonZodiacResponse_descriptor,
-        new java.lang.String[] { "Zodiac", });
+        new java.lang.String[] { "Zodiac", "Data", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

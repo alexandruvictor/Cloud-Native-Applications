@@ -12,38 +12,31 @@ public class Zodie {
         this.data_sfarsit = data_sfarsit;
     }
 
-    public Zodie()
-    {
+    public Zodie() {
 
     }
 
-    public void setNume(String nume)
-    {
-        this.nume=nume;
+    public void setNume(String nume) {
+        this.nume = nume;
     }
 
-    public void setData_inceput(String data_inceput)
-    {
-        this.data_inceput=data_inceput;
+    public void setData_inceput(String data_inceput) {
+        this.data_inceput = data_inceput;
     }
 
-    public void setData_sfarsit(String data_sfarsit)
-    {
-        this.data_sfarsit=data_sfarsit;
+    public void setData_sfarsit(String data_sfarsit) {
+        this.data_sfarsit = data_sfarsit;
     }
 
-    public String getNume()
-    {
+    public String getNume() {
         return this.nume;
     }
 
-    public String getData_inceput()
-    {
+    public String getData_inceput() {
         return this.data_inceput;
     }
 
-    public String getData_sfarsit()
-    {
+    public String getData_sfarsit() {
         return this.data_sfarsit;
     }
 }

@@ -40,8 +40,8 @@ public class Main {
         ManagedChannel channel = ManagedChannelBuilder.forAddress
                 ("localhost", 8999).usePlaintext().build();
 
-       PersonServiceZodiacGrpc.PersonServiceZodiacStub personStub =
-               PersonServiceZodiacGrpc.newStub(channel);
+        PersonServiceZodiacGrpc.PersonServiceZodiacStub personStub =
+                PersonServiceZodiacGrpc.newStub(channel);
 
         System.out.println("Meniu:");
         System.out.println("1. Set a date to get zodiac:");
@@ -62,34 +62,33 @@ public class Main {
 
                     while (!isDateValid(date)) {
                         System.out.println("Error on date!");
-                        date=input.next();
+                        date = input.next();
                     }
 
-                        personStub.getPersonZodiac(
-                                PersonZodiacOuterClass.PersonZodiac.newBuilder()
-                                        .setDate(date).build(),
-                                new StreamObserver<PersonZodiacOuterClass.PersonZodiacResponse>() {
-                                    @Override
-                                    public void onNext(PersonZodiacOuterClass.PersonZodiacResponse personZodiacResponse) {
-                                        System.out.println(personZodiacResponse);
-                                    }
-
-                                    @Override
-                                    public void onError(Throwable throwable) {
-                                        System.out.println("Error : " + throwable.getMessage());
-                                    }
-
-                                    @Override
-                                    public void onCompleted() {
-
-                                    }
+                    personStub.getPersonZodiac(
+                            PersonZodiacOuterClass.PersonZodiac.newBuilder()
+                                    .setDate(date).build(),
+                            new StreamObserver<PersonZodiacOuterClass.PersonZodiacResponse>() {
+                                @Override
+                                public void onNext(PersonZodiacOuterClass.PersonZodiacResponse personZodiacResponse) {
+                                    System.out.println(personZodiacResponse);
                                 }
-                        );
+
+                                @Override
+                                public void onError(Throwable throwable) {
+                                    System.out.println("Error : " + throwable.getMessage());
+                                }
+
+                                @Override
+                                public void onCompleted() {
+
+                                }
+                            }
+                    );
                     break;
                 }
 
-                case 2 :
-                {
+                case 2: {
                     isConnected = false;
                     break;
                 }

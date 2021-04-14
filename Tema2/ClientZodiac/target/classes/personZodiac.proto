@@ -8,9 +8,9 @@ service PersonServiceZodiac{
 
 message PersonZodiac{
   string date = 1;
-  string zodiac = 2;
 }
 
 message PersonZodiacResponse{
-  string zodiac=1;
+  string zodiac = 1;
+  string data = 2;
 }
