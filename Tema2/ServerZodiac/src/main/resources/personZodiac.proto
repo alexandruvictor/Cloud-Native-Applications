@@ -2,21 +2,17 @@ syntax = "proto3";
 option java_package = "proto";
 
 service PersonServiceZodiac{
-  rpc setPersonZodiac(Person) returns (Empty);
-  rpc getPersonZodiac(PersonZodiacRequest) returns (PersonZodiacResponse);
+
+  rpc getPersonZodiac(PersonZodiac) returns (PersonZodiacResponse);
 }
 
-message Person{
+message PersonZodiac{
   string date = 1;
   string zodiac = 2;
 }
 
-message PersonZodiacRequest{
-  string zodiac = 1;
-}
-
 message PersonZodiacResponse{
-  Person person = 1;
+  PersonZodiac person = 1;
 }
 
 message Empty {

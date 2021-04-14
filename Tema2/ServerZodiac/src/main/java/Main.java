@@ -1,12 +1,13 @@
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import services.PersonZodiac;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            Server server = ServerBuilder.forPort(8999).addService().build();
+            Server server = ServerBuilder.forPort(8999).addService(new PersonZodiac()).build();
 
             server.start();
 
