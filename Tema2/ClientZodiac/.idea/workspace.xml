@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76089152-978f-4088-8b1f-64331d33f6ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/personZodiacChinese.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonZodiacOuterClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proto/PersonZodiacOuterClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personZodiac.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/personZodiac.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/src/main/java/proto/PersonZodiacOuterClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/java/proto/PersonZodiacOuterClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/PersonZodiac.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/PersonZodiac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/Zodie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/Zodie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/src/main/resources/personZodiac.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/resources/personZodiac.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/personZodiac.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/personZodiac.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiac$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiac$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiac.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponseOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponseOrBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/proto/PersonZodiacOuterClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/services/PersonZodiac.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/services/PersonZodiac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +36,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexandru Victor\Desktop\Cloud-Native-Applications\Tema2\ClientZodiac\src\main\resources" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

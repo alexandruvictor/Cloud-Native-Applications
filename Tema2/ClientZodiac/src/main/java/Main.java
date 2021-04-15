@@ -1,7 +1,9 @@
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
+import proto.PersonServiceZodiacChineseGrpc;
 import proto.PersonServiceZodiacGrpc;
+import proto.PersonZodiacChineseOuterClass;
 import proto.PersonZodiacOuterClass;
 
 import java.text.DateFormat;
@@ -40,8 +42,6 @@ public class Main {
         ManagedChannel channel = ManagedChannelBuilder.forAddress
                 ("localhost", 8999).usePlaintext().build();
 
-        PersonServiceZodiacGrpc.PersonServiceZodiacStub personStub =
-                PersonServiceZodiacGrpc.newStub(channel);
 
         System.out.println("Meniu:");
         System.out.println("1. Set a date to get zodiac:");
@@ -64,27 +64,58 @@ public class Main {
                         System.out.println("Error on date!");
                         date = input.next();
                     }
+                    System.out.println("Zodiac type:");
+                    System.out.println("1. European: (press 1)");
+                    System.out.println("2. Chinese: (press 2");
+                    int chose = input.nextInt();
+                    if (chose == 1) {
+                        PersonServiceZodiacGrpc.PersonServiceZodiacStub personStub =
+                                PersonServiceZodiacGrpc.newStub(channel);
+                        personStub.getPersonZodiac(
+                                PersonZodiacOuterClass.PersonZodiac.newBuilder()
+                                        .setDate(date).build(),
+                                new StreamObserver<PersonZodiacOuterClass.PersonZodiacResponse>() {
+                                    @Override
+                                    public void onNext(PersonZodiacOuterClass.PersonZodiacResponse personZodiacResponse) {
+                                        System.out.println(personZodiacResponse);
+                                    }
 
-                    personStub.getPersonZodiac(
-                            PersonZodiacOuterClass.PersonZodiac.newBuilder()
-                                    .setDate(date).build(),
-                            new StreamObserver<PersonZodiacOuterClass.PersonZodiacResponse>() {
-                                @Override
-                                public void onNext(PersonZodiacOuterClass.PersonZodiacResponse personZodiacResponse) {
-                                    System.out.println(personZodiacResponse);
+                                    @Override
+                                    public void onError(Throwable throwable) {
+                                        System.out.println("Error : " + throwable.getMessage());
+                                    }
+
+                                    @Override
+                                    public void onCompleted() {
+
+                                    }
                                 }
+                        );
+                    } else if (chose == 2) {
+                        PersonServiceZodiacChineseGrpc.PersonServiceZodiacChineseStub personChinseStub =
+                                PersonServiceZodiacChineseGrpc.newStub(channel);
 
-                                @Override
-                                public void onError(Throwable throwable) {
-                                    System.out.println("Error : " + throwable.getMessage());
+                        personChinseStub.getPersonZodiacChinese(
+                                PersonZodiacChineseOuterClass.PersonZodiacChinese.newBuilder().
+                                        setDate(date).build(),
+                                new StreamObserver<PersonZodiacChineseOuterClass.PersonZodiacChineseResponse>() {
+                                    @Override
+                                    public void onNext(PersonZodiacChineseOuterClass.PersonZodiacChineseResponse personZodiacChineseResponse) {
+                                        System.out.println(personZodiacChineseResponse);
+                                    }
+
+                                    @Override
+                                    public void onError(Throwable throwable) {
+
+                                    }
+
+                                    @Override
+                                    public void onCompleted() {
+
+                                    }
                                 }
-
-                                @Override
-                                public void onCompleted() {
-
-                                }
-                            }
-                    );
+                        );
+                    } else System.out.println("Error in select type zodiac sign!\n");
                     break;
                 }
 
