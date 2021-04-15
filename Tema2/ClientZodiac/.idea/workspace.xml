@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76089152-978f-4088-8b1f-64331d33f6ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ServerZodiac/src/main/resources/chineseZodiac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/resources/chineseZodiac.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/LogicZodiac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerZodiac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/PersonZodiac.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/PersonZodiac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/PersonZodiacChinese.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/src/main/java/services/PersonZodiacChinese.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/services/PersonZodiac.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/services/PersonZodiac.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerZodiac/target/classes/services/PersonZodiacChinese.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerZodiac/target/classes/services/PersonZodiacChinese.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
