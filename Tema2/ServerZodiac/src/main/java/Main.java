@@ -1,6 +1,7 @@
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import services.PersonZodiac;
+import services.PersonZodiacChinese;
 
 
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         try {
-            Server server = ServerBuilder.forPort(8999).addService(new PersonZodiac()).build();
+            Server server = ServerBuilder.forPort(8999).addService(new PersonZodiac()).addService(new PersonZodiacChinese()).build();
 
             server.start();
 

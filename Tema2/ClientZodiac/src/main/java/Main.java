@@ -127,8 +127,6 @@ public class Main {
                 default: {
                     System.out.println("Unknown command, insert a valid command!");
                 }
-
-
             }
 
         }
