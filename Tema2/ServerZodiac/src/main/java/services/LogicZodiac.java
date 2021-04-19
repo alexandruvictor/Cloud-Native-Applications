@@ -1,5 +1,4 @@
 package services;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.DateFormat;
@@ -36,18 +35,25 @@ public class LogicZodiac {
         }
     }
 
-    public String findZodiac(String date, ArrayList<Zodie> listZodii) throws ParseException {
+    public String findZodiac(String date, String choice,  ArrayList<Zodie> listZodii) throws ParseException {
         DateFormat dateFormat = new SimpleDateFormat(date_format);
         Date date1 = dateFormat.parse(date);
 
         DateFormat dateFormat2 = new SimpleDateFormat("YYYY");
         String year = "/" + dateFormat2.format(date1).toUpperCase();
-
+        String b;
+        String e;
         for (int index = 0; index < listZodii.size(); index++) {
-            String b = listZodii.get(index).getData_inceput() + year;
-            Date begin = dateFormat.parse(b);
+            if(choice.equals("european")) {
+                b = listZodii.get(index).getData_inceput() + year;
+                e = listZodii.get(index).getData_sfarsit() + year;
+            }
+            else {
+                b = listZodii.get(index).getData_inceput();
+                e = listZodii.get(index).getData_sfarsit();
+            }
 
-            String e = listZodii.get(index).getData_sfarsit() + year;
+            Date begin = dateFormat.parse(b);
             Date end = dateFormat.parse(e);
 
             if (date1.after(begin) && date1.before(end) || date1.equals(begin) || date1.equals(end)) {
@@ -56,24 +62,4 @@ public class LogicZodiac {
         }
         return null;
     }
-
-    public String findZodiacChinese(String date, ArrayList<Zodie> listZodii) throws ParseException {
-        DateFormat dateFormat = new SimpleDateFormat(date_format);
-        Date date1 = dateFormat.parse(date);
-
-        for (Zodie zodie : listZodii) {
-            String b = zodie.getData_inceput();
-            Date begin = dateFormat.parse(b);
-
-            String e = zodie.getData_sfarsit();
-            Date end = dateFormat.parse(e);
-
-            if (date1.after(begin) && date1.before(end) || date1.equals(begin) || date1.equals(end)) {
-                return zodie.getNume();
-            }
-        }
-        return null;
-    }
-
-
 }

@@ -6,119 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5995561f-1c54-4ccb-a20c-ce732719314f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../ClientZodiac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientZodiac/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientZodiac/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/src/main/java/proto/PersonServiceZodiacChineseGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/src/main/java/proto/PersonServiceZodiacGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/src/main/java/proto/PersonZodiacChineseOuterClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/src/main/java/proto/PersonZodiacOuterClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/src/main/resources/personZodiac.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/src/main/resources/personZodiacChinese.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientZodiac/target/classes/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientZodiac/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/personZodiac.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/personZodiacChinese.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$MethodHandlers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseBaseDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseBlockingStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseFileDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseFutureStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseImplBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseMethodDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacChineseGrpc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$MethodHandlers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacBaseDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacBlockingStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacFileDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacFutureStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacImplBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacMethodDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonServiceZodiacGrpc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChinese$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChinese$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChinese.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponseOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacChineseOuterClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiac$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiac$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiac.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponseOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/classes/proto/PersonZodiacOuterClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientZodiac/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientZodiac/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientZodiac/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonServiceZodiacChineseGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonServiceZodiacGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonZodiacChineseOuterClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonZodiacOuterClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/European.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/European.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/LogicZodiac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/LogicZodiac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/PersonZodiac.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/PersonZodiacChinese.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personZodiac.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personZodiacChinese.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/personZodiac.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/personZodiacChinese.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$MethodHandlers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseBaseDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseBlockingStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseFileDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseFutureStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseImplBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseMethodDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc$PersonServiceZodiacChineseStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacChineseGrpc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$MethodHandlers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacBaseDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacBlockingStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacFileDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacFutureStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacImplBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacMethodDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc$PersonServiceZodiacStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonServiceZodiacGrpc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChinese$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChinese$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChinese.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass$PersonZodiacChineseResponseOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacChineseOuterClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiac$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiac$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiac.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiacOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass$PersonZodiacResponseOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/PersonZodiacOuterClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ZodiacChinese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ZodiacChinese.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/European.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/European.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/services/LogicZodiac.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/LogicZodiac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/PersonZodiac.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/PersonZodiacChinese.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/ZodiacChinese.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/ZodiacChinese.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -20,7 +20,7 @@ public class ZodiacChinese extends ServiceZodiacChineseGrpc.ServiceZodiacChinese
 
         LogicZodiac logic=new LogicZodiac();
         try {
-            logic.readZodiacFile("C:\\Users\\Alexandru Victor\\Desktop" +
+            logic.readZodiacFile( "C:\\Users\\Alexandru Victor\\Desktop\\Cloud-Native-Applications" +
                     "\\Tema2\\ServerZodiac\\src\\main\\resources\\chineseZodiac.txt", listZodii);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -29,7 +29,7 @@ public class ZodiacChinese extends ServiceZodiacChineseGrpc.ServiceZodiacChinese
         String zodie = "";
 
         try {
-            zodie = logic.findZodiacChinese(request.getDate(), listZodii);
+            zodie = logic.findZodiac(request.getDate(), request.getChoice(), listZodii);
         } catch (ParseException e) {
             e.printStackTrace();
         }

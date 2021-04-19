@@ -26,7 +26,7 @@ public class European extends ServiceZodiacEuropeanGrpc.ServiceZodiacEuropeanImp
         String zodie = "";
 
         try {
-            zodie = logic.findZodiac(request.getDate(), listZodii);
+            zodie = logic.findZodiac(request.getDate(), request.getChoice(), listZodii);
         } catch (ParseException e) {
             e.printStackTrace();
         }
