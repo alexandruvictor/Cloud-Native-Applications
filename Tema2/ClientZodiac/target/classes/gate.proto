@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "proto";
+
+service ZodiacService{
+
+  rpc getPerson(PersonRequest) returns (PersonResponse);
+}
+
+message PersonRequest{
+  string date = 1;
+  string choice=2;
+}
+
+message PersonResponse{
+  string zodiac = 1;
+  string data = 2;
+}

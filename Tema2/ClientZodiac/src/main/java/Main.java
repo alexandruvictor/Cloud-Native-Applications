@@ -1,10 +1,8 @@
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-import proto.PersonServiceZodiacChineseGrpc;
-import proto.PersonServiceZodiacGrpc;
-import proto.PersonZodiacChineseOuterClass;
-import proto.PersonZodiacOuterClass;
+import proto.Gate;
+import proto.ZodiacServiceGrpc;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -36,6 +34,24 @@ public class Main {
         }
 
     }
+    public enum choicesEuropean {eu, european, European, euro,};
+    public enum choicesChinese { Chinese, chinese, chines, china, China};
+
+    public static int isChoiceValid(String choice)
+    {
+      for(choicesEuropean c: choicesEuropean.values())
+      {
+          if(c.name().equals(choice))
+              return 1;
+      }
+
+        for(choicesChinese c: choicesChinese.values())
+        {
+            if(c.name().equals(choice))
+                return 2;
+        }
+      return 0;
+    }
 
 
     public static void main(String[] args) {
@@ -65,57 +81,56 @@ public class Main {
                         date = input.next();
                     }
                     System.out.println("Zodiac type:");
-                    System.out.println("1. European: (press 1)");
-                    System.out.println("2. Chinese: (press 2");
-                    int chose = input.nextInt();
-                    if (chose == 1) {
-                        PersonServiceZodiacGrpc.PersonServiceZodiacStub personStub =
-                                PersonServiceZodiacGrpc.newStub(channel);
-                        personStub.getPersonZodiac(
-                                PersonZodiacOuterClass.PersonZodiac.newBuilder()
-                                        .setDate(date).build(),
-                                new StreamObserver<PersonZodiacOuterClass.PersonZodiacResponse>() {
-                                    @Override
-                                    public void onNext(PersonZodiacOuterClass.PersonZodiacResponse personZodiacResponse) {
-                                        System.out.println(personZodiacResponse);
-                                    }
+                    System.out.println("1. European;");
+                    System.out.println("2. Chinese;");
 
-                                    @Override
-                                    public void onError(Throwable throwable) {
-                                        System.out.println("Error : " + throwable.getMessage());
-                                    }
+                    String choice = input.next();
+                    while (isChoiceValid(choice)==0) {
+                        System.out.println("Error on choice!");
+                        choice = input.next();
 
-                                    @Override
-                                    public void onCompleted() {
+                    }
+                    if(isChoiceValid(choice)==1)
+                    {
+                        choice="european";
+                    }
+                    else
+                    {
+                        choice="chinese";
+                    }
 
-                                    }
+
+                    ZodiacServiceGrpc.ZodiacServiceStub zodiacServiceStub=
+                            ZodiacServiceGrpc.newStub(channel);
+
+                    zodiacServiceStub.getPerson(
+
+                            Gate.PersonRequest.newBuilder()
+                                    .setDate(date)
+                                    .setChoice(choice)
+                                    .build(),
+
+                            new StreamObserver<Gate.PersonResponse>() {
+                                @Override
+                                public void onNext(Gate.PersonResponse personResponse) {
+                                    System.out.println(personResponse);
                                 }
-                        );
-                    } else if (chose == 2) {
-                        PersonServiceZodiacChineseGrpc.PersonServiceZodiacChineseStub personChinseStub =
-                                PersonServiceZodiacChineseGrpc.newStub(channel);
 
-                        personChinseStub.getPersonZodiacChinese(
-                                PersonZodiacChineseOuterClass.PersonZodiacChinese.newBuilder().
-                                        setDate(date).build(),
-                                new StreamObserver<PersonZodiacChineseOuterClass.PersonZodiacChineseResponse>() {
-                                    @Override
-                                    public void onNext(PersonZodiacChineseOuterClass.PersonZodiacChineseResponse personZodiacChineseResponse) {
-                                        System.out.println(personZodiacChineseResponse);
-                                    }
+                                @Override
+                                public void onError(Throwable throwable) {
 
-                                    @Override
-                                    public void onError(Throwable throwable) {
-
-                                    }
-
-                                    @Override
-                                    public void onCompleted() {
-
-                                    }
                                 }
-                        );
-                    } else System.out.println("Error in select type zodiac sign!\n");
+
+                                @Override
+                                public void onCompleted() {
+
+                                }
+                            }
+
+                    );
+
+
+
                     break;
                 }
 

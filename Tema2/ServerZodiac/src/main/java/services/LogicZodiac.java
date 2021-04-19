@@ -57,4 +57,23 @@ public class LogicZodiac {
         return null;
     }
 
+    public String findZodiacChinese(String date, ArrayList<Zodie> listZodii) throws ParseException {
+        DateFormat dateFormat = new SimpleDateFormat(date_format);
+        Date date1 = dateFormat.parse(date);
+
+        for (Zodie zodie : listZodii) {
+            String b = zodie.getData_inceput();
+            Date begin = dateFormat.parse(b);
+
+            String e = zodie.getData_sfarsit();
+            Date end = dateFormat.parse(e);
+
+            if (date1.after(begin) && date1.before(end) || date1.equals(begin) || date1.equals(end)) {
+                return zodie.getNume();
+            }
+        }
+        return null;
+    }
+
+
 }
